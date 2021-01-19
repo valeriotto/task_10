@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Угадайка</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+    <div class="container">
+        <div class="row game-card align-items-center">
+            <div class="col col-md-5 offset-md-3">
+                <div class="card text-center">
+                    <div class="col">
+                        <h5 class="card-title"><span id="answerText">Определим границы игры</span></h5>
+                    </div>
+                    <div class="col">
+                        <input class="form-control input-window" id="inputWindowMin" value=""
+                            placeholder="Введите диапозон ОТ (не больше -999)">
+                    </div>
+                    <div class="col">
+                        <input class="form-control input-window" id="inputWindowMax" value=""
+                            placeholder="Введите диапозон ДО (не больше 999)">
+                    </div>
+                    <div class="card-footer">
+                        <button class="btn btn-success" id="btnGameStart">Начать игру</button>
+                    </div>
+                    <div class="card-header">
+                        <p class="m-0"><span id="orderNumberField"></span></p>
+                    </div>
+                    <div class="card-body">
+                        <div class="row no-gutters">
+                            <div class="col">
+                                <h3 class="card-title m-0"><span id="answerField">Я готов угадывать!</span></h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <div class="btn-group">
+                            <button class="btn btn-info" id="btnLess">&#129047;<br>меньше</button>
+                            <button class="btn btn-success btn-lg" id="btnEqual">Верно!</button>
+                            <button class="btn btn-info" id="btnOver">больше<br>&#129045;</button>
+                        </div>
+                    </div>
+                    <div class="card-footer">
+                        <button class="btn btn-info" id="btnRetry">Заново</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
