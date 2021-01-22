@@ -202,7 +202,7 @@ document.getElementById('btnLess').addEventListener('click', function () {
          answerField.innerText = answerPhrase;
          gameRun = false;
       } else {
-         maxValue = answerNumber - 1;
+         maxValue = answerNumber;
          answerNumber = Math.floor((minValue + maxValue) / 2);
          orderNumber++;
          orderNumberField.innerText = 'Вопрос № ' + orderNumber;
